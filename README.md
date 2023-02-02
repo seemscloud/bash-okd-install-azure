@@ -1,0 +1,1 @@
+# bash-okd-install-azure
