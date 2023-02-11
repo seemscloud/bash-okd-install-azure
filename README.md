@@ -164,3 +164,10 @@ echo "${OPENSHIFT_INSTALL_OS_IMAGE_OVERRIDE}"
   --dir install_dir/ \
   --log-level=debug
 ```
+
+```bash
+export KUBECONFIG=install_dir/auth/kubeconfig
+
+. <(oc completion bash)
+. <(kubectl completion bash)
+```
