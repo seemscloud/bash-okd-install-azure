@@ -27,16 +27,29 @@
 az ad sp create-for-rbac \
   --role Contributor \
   --name OKD \
-  --scopes /subscriptions/XXXX-XXXXX
+  --scopes /subscriptions/Aaaa-Aaaa
+```
+
+```json
+{
+  "appId": "Bbbbb-Bbbbb",
+  "displayName": "App-Name",
+  "password": "Ccccc-Ccccc",
+  "tenant": "Ddddd-Ddddd"
+}
 ```
 
 #### Get SP ID
 
 ```bash
 az ad sp show \
-  --id "XXXX-XXXXX" \
+  --id "Bbbbb-Bbbbb" \
   --query id \
   --output tsv
+```
+
+```
+Eeeee-Eeeee
 ```
 
 #### Role Assignment to SP
@@ -44,7 +57,7 @@ az ad sp show \
 ```bash
 az role assignment create \
   --role "User Access Administrator" \
-  --assignee-object-id 4f0af042-ead4-4e4e-8a0e-0cee862dee1f
+  --assignee-object-id Eeeee-Eeeee
 ```
 
 ----
