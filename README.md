@@ -21,6 +21,22 @@
 
 ## Azure Resources
 
+### Prepare
+
+```bash
+az account list --refresh
+```
+
+```bash
+az account show --output table
+az account list --refresh --output table
+```
+
+```bash
+az account set -s Xxxxx-Xxxxx
+```
+
+
 ### Application
 
 ```bash
